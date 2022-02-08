@@ -12,13 +12,13 @@ var gimagenotregister = false
 var sgooglenotregister = false
 // quando não há comando registrado o bot procura uma pesquisa no google
 
-const antinewchatmsg = 'O anti chat novo está ativado e você não é meu proprietário, logo será bloqueado'
+const antinewchatmsg = 'Yeni anti-çat aktivləşdirilib və siz mənim sahibim deyilsiniz, ona görə də bloklanacaqsınız'
 //mensagem do antinewchat
 
 const urlaudiomenu = 'https://b.top4top.io/m_19923zx481.mp3'
 // link direto da url do audio
 
-const antipvmsg = '*🚫 PV BLOQUEADO 🚫*'
+const antipvmsg = '*🚫 BLOKLANMIŞ PV 🚫*'
 //mensagem do antipv
 
 const limitqnt = 9999
@@ -33,7 +33,7 @@ const delaygamescmd = 60
 //tempo de delay dos comandos de games (medido por segundos)
 
 const msgwelcomeimg = (numero, groupname) => {
-    return `Seja bem-vindo ${numero}\n\nEscreve ${prefix}menu para lista de comandos`
+    return `Xoş gəldiniz ${numero}\n\nƏmr siyahısı üçün ${prefix}menyu yazın`
 }
 //Texto de boas vindas na imagem quando welcome esta ativado
 //Obs: não coloque o texto longo para a imagem não sumir
