@@ -33,19 +33,19 @@ const delaygamescmd = 60
 //tempo de delay dos comandos de games (medido por segundos)
 
 const msgwelcomeimg = (numero, groupname) => {
-    return `Xoş gəldiniz ${numero}\n\nƏmr siyahısı üçün ${prefix}menyu yazın`
+    return `Xoş gəldiniz ${numero}\n\nƏmr siyahısı üçün ${prefix}menu yazın`
 }
 //Texto de boas vindas na imagem quando welcome esta ativado
 //Obs: não coloque o texto longo para a imagem não sumir
 
 const byemsgimg = (numero, groupname) => {
-    return `Adeus ${numero}`
+    return `Sağol ${numero}`
 }
 //Texto de despedidas na imagem quando welcome esta ativado
 //Obs: não coloque o texto longo para a imagem não sumir
 
 const menumsgimg = (numero, groupname, bat) => {
-    return `MENU DO BRIZAS-BOT COM 434 COMANDOS, BATERIA %${bat}`
+    return `AzeriBOT Menyusu, 434 ƏMR, BATARYA %${bat}`
 }
 //Texto no menu da imagem quando welcome esta ativado
 //Obs: não coloque o texto longo para a imagem não sumir
@@ -54,28 +54,28 @@ const titlemenumsgimg = 'BEM-VINDO'
 //Título no menu da imagem quando welcome esta ativado
 //Obs: não coloque o texto longo para a imagem não sumir
 
-const backgroundmenuimg = `https://i.imgur.com/tVKFNFk.png`
+const backgroundmenuimg = `https://i.ytimg.com/vi/AJQmx0zdXSk/maxresdefault.jpg`
 //Link direto da imagem de fundo TAMANHO RECOMENDADO: 1280x720
 //Obs: não coloque o texto longo para a imagem não sumir
 
-const backgroundwelcomeimg = `https://i.imgur.com/tVKFNFk.png`
+const backgroundwelcomeimg = `https://i.ytimg.com/vi/AJQmx0zdXSk/maxresdefault.jpg`
 //Link direto da imagem de fundo da boas-vindas TAMANHO RECOMENDADO: 1280x720
 //Obs: não coloque o texto longo para a imagem não sumir
 
-const backgroundbyeimg = `https://i.imgur.com/2TCj9ri.jpg`
+const backgroundbyeimg = `https://i.ytimg.com/vi/AJQmx0zdXSk/maxresdefault.jpg`
 //Link direto da imagem de fundo das despedidas TAMANHO RECOMENDADO: 1280x720
 //Obs: não coloque o texto longo para a imagem não sumir
 
 const apikeyimgbb = 'c9cf132756510ad171587fb5a5a0389f'
 // sua key do imgbb para ativar o antiporn e mais alguns comando que necessita de baixar imagem
 
-const cr = '☄️✨𝑩𝑹⃟𝑰𝒁𝑨𝑺 𝑶⃟𝑹𝑰𝑶𝑵✨☄️\n' 
+const cr = '🇦🇿AzeriBot🇦🇿\n' 
 // texto do simbolo de verificado
 
 const prefix = '!' 
 // prefixo
 
-const blockedmsg = '*😜 Seu número esta bloqueado, ou seja não ouvindo você 😜*'
+const blockedmsg = '*😜 Nömrəniz bloklanıb, yəni sizi dinləmir 😜*'
 // mensagem quando alguem bloqueado solicita um comando
 
 const blockedcmdmsg = '*🚫Este comando esta bloqueado contate o propitetário do bot para saber o pq🚫*'
@@ -86,36 +86,36 @@ const blockedcmdmsg = '*🚫Este comando esta bloqueado contate o propitetário 
 const banmsgtype = '*Corra membro comum, o ban estar próximo*'
 // mensagem de ban no anti tipos de mensagem
 
-const ativohelp = `O sistema de contagem de mensagens é por grupo e consiste em rankear, listar, remover pessoas de acordo
-com a frequência de mensagens no grupo, veja abaixo os comandos para administrar as mensagens do grupo:
+const ativohelp = `Mesajların hesablanması sistemi qrup üzrədir və insanları sıralamaq, siyahıya salmaq, onlara görə silməkdən ibarətdir
+qrupdakı mesajların tezliyi ilə qrupun mesajlarını idarə etmək üçün aşağıdakı əmrlərə baxın:
 
-checkativo (marcar) - lista a frequência de mensagens do membro marcado
-rankativo - rankea as pessoas mais ativas do grupo
-banativos (num) - remove membros com uma certa qnt de numeros de msg pra baixo
-filtroativo (num) - lista membros com uma certa qnt de numeros de msg pra baixo]
-atividade - lista a atividade de todos membros do grupo
+checkativo (mark) - işarələnmiş üzvün mesaj tezliyini sadalayır
+rankativo - qrupdakı ən aktiv insanları sıralayır
+banativos (num) - müəyyən qnt mesaj nömrələri olan üzvləri silir
+filtroativo (num) - müəyyən qnt mesaj nömrələri olan üzvlərin siyahısı]
+atividade - bütün qrup üzvlərinin fəaliyyətini sadalayır
 
-Obs: O número de mensagens pode estar impreciso devido a contagem ser pelo bot.`
+Qeyd: Mesajların sayı bot tərəfindən olduğuna görə qeyri-dəqiq ola bilər.`
 
-const adminmsgtype = '*Tu é adm ent n vou te banir por mandar um tipo de mensagem proibida*'
+const adminmsgtype = '*Siz adminsiniz, ona görə də qadağan olunmuş tipli mesaj göndərdiyiniz üçün sizə qadağa qoymayacağam*'
 // mensagem de quando adm manda tipos de mensagens proibidas
 
-const banmsgporn = 'Hmmm pornozinho com antiporn ativado, ja sabe né...'
+const banmsgporn = 'Hmmm porno ilə antiporn aktivləşdirildi, siz artıq doğru bilirsiniz...'
 // mensagem de ban no antiporn
 
-const adminmsgporn = '*Tu é adm ent n vou te banir por mandar porn*'
+const adminmsgporn = '*Siz adminsınız, ona görə də porno göndərdiyiniz üçün sizə qadağa qoymayacağam*'
 // mensagem de quando adm manda porn com antiporn ativado
 
-const banmsglink = 'Corra Membro comum, O ban está próximo...'
+const banmsglink = 'Digər nömrəni işlət, Ban yaxınlaşır...'
 // mensagem de ban no antilink
 
-const adminmsglink = 'Isso é um link amigo... ah é tu é adm ent pode kkkk 🙃'
+const adminmsglink = 'Bu bir link dostumdur... oh bəli siz adminsiniz, buna görə də lol ola bilərsiniz 🙃'
 // mensagem de quando adm manda link
 
-const adminmsgpalavra = 'isso esta na lista das palavras proibidas pelo bot'
+const adminmsgpalavra = 'Bu söz bot tərəfindən qadağan olunmuş sözlər siyahısındadır'
 // mensagem de quando adm manda uma palavra proibida pelo bot
 
-const banmsgpalavra = 'Palavra proibida? Já sabe né'
+const banmsgpalavra = 'Qadağan olunmuş söz? siz artıq düz bilirsiniz'
 // mensagem de ban quando manda uma palavra proibida pelo bot
 
 const qnttravahardroleta = 2
@@ -125,33 +125,33 @@ const qnttravahardroleta = 2
 // MENSAGENS DE BOM DIA BOA TARDE E BOA NOITE
 
 const linkimgday = 'https://i.imgur.com/RR18JiI.jpg'
-const textmsgday = 'Ohayo gozaimasu, Onii-chan 👉👈'
+const textmsgday = 'Sabahınız xeyir, Elçin Qasımov 👉👈'
 // link e mensagem de bom dia
 
 const linkimgeve = 'https://i.ibb.co/bLXgcBW/lp-tarde-anime-by-hitsukinyan-db7fpqr-fullview.jpg'
-const textmsgeve = `Kon'nichiwa Onii-chan, aceite esse café ☕`
+const textmsgeve = `Hörmətli Elçin bəy, xahiş olunur bu kofeni qəbul et. ☕`
 // link e mensagem de boa tarde
 
 const linkimgnig = 'https://i.ibb.co/VJCd34F/EKvo372-X0-AEd-Hz.jpg'
-const textmsgnig = 'Konbanwa Onii-chan, espero que tenha tido um bom dia ☺️'
+const textmsgnig = 'Hörmətli Elçin bəy, ümid edirəm yaxşı gün keçirdin ☺️'
 // link e mensagem de boa noite 
 
 // MENSAGENS DE ERRO
 
-const msgerr = 'Deu erro, tente novamente :/'
+const msgerr = 'Xəta baş verdi, yenidən cəhd edin :/'
 // mensagem de erro
 
-const notregister = `*Comando não registrado, escreva ${prefix}menu para ver a lista de comandos*`
+const notregister = `*Komanda qeydiyyatdan keçməyib, əmrlərin siyahısını görmək üçün ${prefix}menu yazın*`
 
 // MENSAGENS DE AUTOREPLY
 
 const botlindo = 'Bakaaaa 😣😣'
 const linkbotlindo = 'https://photos1.iorbix.com/00/00/00/00/02/72/43/64/C--6tZwaASQH-b.jpg'
-const botfeio = 'Tu parece um sirgueijo, um caranguejo amassado 😡'
-const cadebot = 'Me chamou onii-chan 👉👈?'
-const botfdp = 'Te foder rapaz, te deitar na porrada quando tiver dormindo'
-const botgostoso = 'Arigato go sai masu 😳👉👈'
-const botfofo = 'Arigato go sai masu 😳👉👈'
+const botfeio = 'Xərçəngə oxşayırsan, əzilmiş xərçəngə 😡'
+const cadebot = 'Məni Elçin Qasımov 👉👈?'
+const botfdp = 'Uç burdan'
+const botgostoso = 'Bir daha təşəkkür edirəm 😳👉👈'
+const botfofo = 'Bir daha təşəkkür edirəm 😳👉👈'
 const botbaianor = 'Convidei sua placa-mãe pra minha rede seu corno'
 const botcorno = 'Vai te foder, jogador de ff, comprador de pack do pézinho'
 const botputa = 'Senhora sua mãe 😡'
